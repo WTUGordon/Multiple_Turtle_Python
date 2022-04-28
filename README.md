@@ -1,1 +1,10 @@
 # Multiple_Turtle_Python
+Turtlebot3的Python版本，cpp版本请移至：https://github.com/WTUGordon/Multiple_Turtlebot3.git
+打开三个终端分别运行：
+roslaunch multi_turtlebot3_navigation multi_turtlebot3_gazebo.launch
+roslaunch multi_turtlebot3_navigation navigation_three.launch
+roslaunch multi_turtlebot3_navigation running.launch
+注意：running的终端会不断打印状态信息，rviz输入目标点后领导者开始移动
+要立即在running的终端按下数字3，两个Burger才会跟随运动。
+按下数字1，一个Burger会中断停止，按下2会连接并跟上前面车队。
+如果中断时间过长，Burger可能永远不会跟上车队了。
